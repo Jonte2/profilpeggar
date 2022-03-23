@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+:root {
+  --green: #14b606;
+  --white-color: #fff;
+  --black-color: #333;
+  --light-color: rgba(0, 0, 0, 0.3);
+  --dark-one: #333;
+  --dark-two: #7a7a7a;
+  --light-one: #fff;
+  --light-two: #f9fafb;
+  --light-three: #f7f7f7;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0.3rem;
+  padding: 0;
+  text-decoration: none;
+  font-size: 60%;
+}
+
+header {
+  width: 99%;
+  display: flex;
+  align-items: center;
+  background: var(--light-two);
+  border-bottom: 0.1rem solid var(--light-color);
+  padding: 0.8rem;
+}
+
+header .logo {
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: var(--black-color);
+  font-size: 3rem;
+}
+
+header .logo span {
+  color: #18b301;
+  font-size: 4rem;
+}
+
+header .search {
+  font-size: 5rem;
+}
+
+header .icons {
+  position: absolute;
+  right: 4rem;
+}
+
+header .icons a,
+header .icons div {
+  height: 4rem;
+  width: 4rem;
+  font-size: 1.7rem;
+  line-height: 4rem;
+  background: var(--black-color);
+  color: var(--white-color);
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.Nyheter {
+  display: flex;
+  max-width: 100%;
+
+}
+.startpage {
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.produkter {
+  color: var(--green);
+  font-size: 4rem;
+  border-radius: 20px;
+  display: flex;
+  max-width: 100%;
+}
+.produkter .ruta-1 {
+  padding: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 50%;
+  border-radius: 20px;
+}
+.produkter .ruta-2 {
+  padding: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 50%;
+  border-radius: 20px;
+}
+.produkter .ruta-3 {
+  padding: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 50%;
+  border-radius: 20px;
