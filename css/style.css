@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   --green: #14b606;
@@ -6,27 +6,27 @@
   --black-color: #333;
   --light-color: rgba(0, 0, 0, 0.3);
   --dark-one: #333;
-  --dark-two: #7a7a7a;
+  --dark-two: #8b8b8b;
   --light-one: #fff;
   --light-two: #f9fafb;
-  --light-three: #f7f7f7;
+  --light-three: #d6d6d6;
 }
 
 * {
-  font-family: "Roboto", sans-serif;
-  margin: 0.3rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0rem;
   padding: 0;
   text-decoration: none;
   font-size: 60%;
 }
 
 header {
-  width: 99%;
+  width: 98%;
   display: flex;
   align-items: center;
   background: var(--light-two);
   border-bottom: 0.1rem solid var(--light-color);
-  padding: 0.8rem;
+  padding: 1.3rem;
 }
 
 header .logo {
@@ -42,7 +42,24 @@ header .logo span {
 }
 
 header .search {
-  font-size: 5rem;
+  margin-left: 150px;
+  font-size: 50px;
+  display: flex;
+}
+
+header .search label{
+  background-color: var(--light-three);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 1.3rem;
+
+}
+
+header .search input {
+  border: none;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: var(--light-three);
 }
 
 header .icons {
@@ -67,11 +84,28 @@ header .icons div {
 .Nyheter {
   display: flex;
   max-width: 100%;
-
 }
 .startpage {
   height: 100%;
   width: 100%;
+}
+
+.buy {
+  z-index: 0;
+  position: absolute;
+  left: 70px;
+  width: 200px;
+  top: 550px;
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--black-color);
+  background-color: var(--green);
+  padding: 10px;
+  display: inline-block;
+  border-radius: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 img {
@@ -91,6 +125,7 @@ img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 50%;
   border-radius: 20px;
+  height: 400px;
 }
 .produkter .ruta-2 {
   padding: 40px;
@@ -103,3 +138,8 @@ img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 50%;
   border-radius: 20px;
+}
+.search .placeholder {
+  padding: 10px;
+  font-size: 20px;
+}
