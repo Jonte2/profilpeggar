@@ -3,8 +3,8 @@
 :root {
   --green: #14b606;
   --white-color: #fff;
-  --black-color: #333;
-  --light-color: rgba(0, 0, 0, 0.3);
+  --black-color: rgb(0, 0, 0);
+  --light-color: rgba(50, 50, 50, 0.3);
   --dark-one: #333;
   --dark-two: #8b8b8b;
   --light-one: #fff;
@@ -21,12 +21,17 @@
   }
 
 header {
-  width: 98%;
+  width: 100%;
   display: flex;
   align-items: center;
   background: var(--light-two);
   border-bottom: 0.1rem solid var(--light-color);
   padding: 1.3rem;
+  background-image: url(img/start.png)
+}
+body{
+  background-color: var(--black-color);
+  overflow-x: hidden;
 }
 
 header .logo {
@@ -82,27 +87,35 @@ header .icons div {
 }
 
 .starttext{
+  position: absolute;
   font-size: 4rem;
-  padding-left: 100px;
-  padding-top: 50px;
+  padding-left: 70px;
+  padding-top: 150px;
   z-index: 2;
+  color: var(--white-color);
+}
+
+.startpage {
+  color: var(--white-color);
+  z-index: 2;
+  font-size: 2rem;
+  position: absolute;
+  top: 310px;
+  left: 70px;
 }
 
 .Nyheter {
   display: flex;
   max-width: 100%;
 }
-.startpage {
-  height: 100%;
-  width: 100%;
-}
+
 
 .buy {
   z-index: 0;
   position: absolute;
   left: 70px;
   width: 200px;
-  top: 400px;
+  top: 370px;
   font-size: 30px;
   cursor: pointer;
   color: var(--black-color);
@@ -115,6 +128,12 @@ header .icons div {
   font-weight: 500;
 }
 
+.meny-img{
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
 .start1 {
   position: absolute;
   right: 20px;
@@ -125,34 +144,135 @@ header .icons div {
   z-index: 0;
 }
 
+
 .produkter {
   color: var(--green);
   font-size: 4rem;
   border-radius: 20px;
   display: flex;
   max-width: 100%;
-  padding-top: 400px;
+  padding-top: 600px;
+  z-index: 3;
 }
 .produkter .ruta-1 {
-  padding: 40px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 50%;
   border-radius: 20px;
-  height: 400px;
+  height: 370px;
+  background-color:var(--white-color);
+  margin: 10px;
 }
+
+.profilpeggar {
+  color: var(--white-color);
+  position: absolute;
+  z-index: -1;
+  font-size: 4rem;
+  left: 165px;
+  top: 830px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+/* .ruta-1 {
+  background-image: url(img/prtees.png);
+  width: 1000px;
+}
+
+div.ruta-1:hover a {
+  display: block;
+} */
+
+.profilpeggar span{
+  color: #18b301;
+  font-size: 5rem;
+}
+
+.produkter .ruta-1:hover {
+  opacity: 0.5;
+  z-index: -1;
+}
+
 .produkter .ruta-2 {
-  padding: 40px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 50%;
   border-radius: 20px;
+  background-color:var(--white-color);
+  margin: 10px;
 }
-.produkter .ruta-3 {
-  padding: 40px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 50%;
-  border-radius: 20px;
+
+.profilkepsar {
+  color: var(--white-color);
+  position: absolute;
+  z-index: -1;
+  font-size: 4rem;
+  left: 790px;
+  top: 830px;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
+
+
+.profilkepsar span{
+  color: #18b301;
+  font-size: 5rem;
+}
+
+
 .search .placeholder {
   padding: 10px;
   font-size: 20px;
 }
+
+/* .deal .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  text-align: center;
+  border: 0.1rem solid var(--light-color);
+  background: var(--white-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.deal .row .content {
+  flex: 1 1 40rem;
+  padding: 1rem;
+}
+
+.deal .row .image {
+  flex: 1 1 40rem;
+  padding: 2rem;
+}
+
+.deal .row .image img {
+  width: 100%;
+}
+
+.deal .row .discount {
+  font-size: 2rem;
+  color: #18b301;
+}
+
+.deal .row .text {
+  font-size: 4rem;
+  color: var(--black-color);
+  padding: 0.5rem 0;
+}
+
+.deal .row .count-down {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+.deal .row .count-down h3 {
+  color: #18b301;
+  font-size: 4rem;
+}
+
+.deal .row .count-down span {
+  color: var(--light-color);
+  font-size: 1.5rem;
+} */
