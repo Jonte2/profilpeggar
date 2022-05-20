@@ -21,13 +21,12 @@
   }
 
 header {
-  width: 100%;
+  width: 50px;
   display: flex;
   align-items: center;
   background: var(--light-two);
   border-bottom: 0.1rem solid var(--light-color);
   padding: 1.3rem;
-  background-image: url(img/start.png)
 }
 body{
   background-color: var(--black-color);
@@ -224,8 +223,38 @@ header .icons div {
   text-align: center;  
   font-size: 20px;
   }  
-
+  
   .form {
     color: white;
-    position: absolute;
+    padding-left: 20px;
+    font-size: 300%;
+  }
+
+  .map{
+    padding: 20px;
+  }
+
+  .time{
+    color: var(--white-color);
+  }
+
+.display {
+  color: white;
+  font-size: 15px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.displayb{
+  padding: 20px;
+  margin: 20px;
+  font-size: 15px;
+}
+
+  @media 
+  only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+    header .search {
+      display: none;
+    }
   }
